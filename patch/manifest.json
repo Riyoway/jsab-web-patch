@@ -1,0 +1,193 @@
+{
+ "name": "jsab-web-patch - fixes for the Just Shapes & Beats web port",
+ "upstream": {
+  "commit": "d641f8b750b201bdac7acb00482fbf77c5b7c175"
+ },
+ "steps": [
+  {
+   "op": "webdata",
+   "parts": [
+    "Build/jsab.data.unityweb.part1",
+    "Build/jsab.data.unityweb.part2",
+    "Build/jsab.data.unityweb.part3",
+    "Build/jsab.data.unityweb.part4"
+   ],
+   "src": [
+    "b6967d8b333695ce809f82ff743a6e79f7d19b225ef37404bf623ab10388152d",
+    "702ff972366fad0b9d2440cff929b6169eec4b40cc3b72e4645d75e1727ae12b",
+    "ef14dc64ed27b02f5225fb684dc4597a1454e2203ed9b88b8db2ab6b8a56ab06",
+    "3f0a4aadf5d32fe8265845a489346e62fd8ae5c7db796b784d2bd5e644d5137f"
+   ],
+   "dst": [
+    "228192498f8adf0259a43246455cd23547d7e947e17dd5711f257cd0731afe53",
+    "2f71d38a957ee1b0efbed92b494f111b7ebf49451acc3c86eac877dfded4af0e",
+    "9c2989b3e4481995748cf5d0b3f408fabf20132df9c4d9e139d5b87c0c2d9919",
+    "6940dadd1664b3da9bf05e1f868897cd413af15ebaed66113d9bd779dafd9b6c"
+   ],
+   "edits": [
+    {
+     "entry": "data.unity3d",
+     "node": "globalgamemanagers.assets",
+     "offset": 3928512,
+     "old": "00007041",
+     "new": "00000000"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 68922468,
+     "old": "00007041",
+     "new": "00000000"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 68923512,
+     "old": "0000803f",
+     "new": "00000000"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69042638,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69083395,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69129686,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69181774,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69231649,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69276488,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69320549,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69363782,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69406025,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69448564,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69492088,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69533930,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "data.unity3d",
+     "node": "resources.assets",
+     "offset": 69576317,
+     "old": "22474e2d4d41544822",
+     "new": "515549542047414d45"
+    },
+    {
+     "entry": "Il2CppData/Metadata/global-metadata.dat",
+     "offset": 89496,
+     "old": "070000003ad40300",
+     "new": "0900000023ca0300"
+    }
+   ]
+  },
+  {
+   "op": "bytes",
+   "file": "Build/jsab.wasm.code.unityweb.part1",
+   "src": "320dbfbdbb41190fd7a983d3bf5bf3bedc73f5452e61ced6b4970cae68402b42",
+   "dst": "a24a8b81397bdcdf27fdc40a34a8c425ac987a5ba62056e25695351429b71df4",
+   "edits": [
+    {
+     "offset": 13052911,
+     "old": "2307",
+     "new": "0f01"
+    }
+   ]
+  },
+  {
+   "op": "unityfs",
+   "file": "StreamingAssets/aa/WebGL/modelfla-jsb_interfaces_mainmenu_assets_all_5d8bd6177be0fb66bf36318297d82ec8.bundle",
+   "src": "ba96825ac58709b1605a9c9ec921ead22cb84cc88cc1b9e5cbd76c5c72bae897",
+   "edits": [
+    {
+     "node": "CAB-a958f52f7111a613d91af4da5c9e0f58",
+     "offset": 17112384,
+     "old": "08000000474e2d4d4154480a",
+     "new": "05000000455849540a000000"
+    },
+    {
+     "node": "CAB-a958f52f7111a613d91af4da5c9e0f58",
+     "offset": 21764112,
+     "old": "08000000474e2d4d4154480a",
+     "new": "05000000455849540a000000"
+    }
+   ],
+   "crc": {
+    "catalog": "StreamingAssets/aa/catalog.json",
+    "old": 1222822574
+   },
+   "dst": "b4978de09e5ac0954be9baa6c243d03cb3a0b0cd2da080390097dd03a6848dee"
+  },
+  {
+   "op": "replace",
+   "file": "index.html",
+   "src": "69c18998350183f9a11da9df8001431e8cf4ba910fea03d5ae9ffcdd47925ade",
+   "dst": "91db357f023e44f8f962452d9888ad6467574285cc798ea80a444d0cc9cd6d08",
+   "with": "files/index.html"
+  }
+ ]
+}
